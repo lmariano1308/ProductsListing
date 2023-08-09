@@ -25,7 +25,7 @@ export const Name = styled.h1`
     font-weight: 700;
     margin: 10px 0;
     text-align: center;
-    color: ${COLORS.PRIMARY_FONT};
+    color: ${COLORS.PRIMARY};
 `;
 
 export const Description = styled.h2`

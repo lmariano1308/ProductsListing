@@ -12,7 +12,7 @@ import * as S from './styles';
 import { COLORS } from '../../misc/colors';
 import MobileFilter from '../../components/MobileFilter';
 
-const { SECONDARY_FONT } = COLORS;
+const { SECONDARY: SECONDARY_FONT } = COLORS;
 
 function App() {
     const [value, setValue] = useState('');
@@ -29,6 +29,10 @@ function App() {
 
     function getYAfterScroll() {
         setPagePosition(window.scrollY);
+    }
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     useEffect(() => {
@@ -52,10 +56,6 @@ function App() {
 
         setFilteredProducts(filteredProductsResult);
     }, [value, selectedCategory]);
-
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
 
     return (
         <S.Container>

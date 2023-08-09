@@ -12,5 +12,5 @@ export const Content = styled(motion.div)``;
 
 export const Box = styled(motion.div)`
     position: absolute;
-    background-color: ${COLORS.SECONDARY_FONT};
+    background-color: ${COLORS.SECONDARY};
 `;

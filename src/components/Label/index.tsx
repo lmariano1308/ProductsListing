@@ -5,14 +5,16 @@ import { MotionProps } from 'framer-motion';
 
 interface Props extends MotionProps {
     children: ReactNode;
-    icon?: ReactNode;
+    left?: ReactNode;
+    right?: ReactNode;
 }
 
-const Label = ({ children, icon, ...props }: Props) => {
+const Label = ({ children, left, right, ...props }: Props) => {
     return (
         <S.Container layout {...props}>
+            {left}
             <Reveal>{typeof children === 'string' ? <S.Text>{children}</S.Text> : children}</Reveal>
-            {icon}
+            {right}
         </S.Container>
     );
 };

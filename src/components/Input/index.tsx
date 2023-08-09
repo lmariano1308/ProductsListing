@@ -3,13 +3,15 @@ import * as S from './styles';
 import FadeIn from '../../animations/FadeIn';
 
 interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
-    right: ReactNode;
+    left?: ReactNode;
+    right?: ReactNode;
 }
 
-const Input = ({ right, ...props }: Props) => {
+const Input = ({ left, right, ...props }: Props) => {
     return (
         <FadeIn>
             <S.Container>
+                {left}
                 <S.Field {...props} />
                 {right}
             </S.Container>

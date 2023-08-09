@@ -3,7 +3,7 @@ import { COLORS } from '../../misc/colors';
 
 export const Container = styled.div`
     align-items: center;
-    border-bottom: 1px solid ${COLORS.SECONDARY_FONT};
+    border-bottom: 1px solid ${COLORS.SECONDARY};
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -19,14 +19,14 @@ export const Container = styled.div`
 export const Field = styled.input`
     background-color: transparent;
     border: none;
-    color: ${COLORS.PRIMARY_FONT};
+    color: ${COLORS.PRIMARY};
     flex: 1;
     font-size: 2rem;
     font-weight: 500;
     height: 100%;
     outline: none;
     &::placeholder {
-        color: ${COLORS.SECONDARY_FONT};
+        color: ${COLORS.SECONDARY};
         text-transform: uppercase;
     }
     @media screen and (max-width: 768px) {

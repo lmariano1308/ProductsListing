@@ -24,7 +24,7 @@ const checkVariants = {
 
 const boxVariants = {
     checked: {
-        backgroundColor: `${COLORS.SECONDARY_FONT}`,
+        backgroundColor: `${COLORS.SECONDARY}`,
         transition: {
             duration: 0.2,
         },

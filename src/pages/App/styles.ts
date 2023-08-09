@@ -34,14 +34,14 @@ export const MiddleContainer = styled.div`
 `;
 
 export const TextContainer = styled.div`
-    border-bottom: 1px solid ${COLORS.PRIMARY_FONT};
+    border-bottom: 1px solid ${COLORS.PRIMARY};
     padding: 1rem 0;
 `;
 
 export const Label = styled.label`
     font-size: 2.2rem;
     font-weight: 400;
-    color: ${COLORS.PRIMARY_FONT};
+    color: ${COLORS.PRIMARY};
 `;
 
 export const ItemsContainer = styled.div`

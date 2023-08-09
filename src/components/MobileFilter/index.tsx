@@ -41,7 +41,7 @@ const MobileFilter: React.FC<Props> = ({ categories, selected, onSelect, isOpen,
     return (
         <>
             <S.FilterContainer onClick={onPress}>
-                <Label icon={<Funnel size={20} color={COLORS.PRIMARY_FONT} />}>Filtros</Label>
+                <Label right={<Funnel size={20} color={COLORS.PRIMARY} />}>Filtros</Label>
             </S.FilterContainer>
             <AnimatePresence mode="wait">
                 {isOpen && (

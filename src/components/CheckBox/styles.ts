@@ -7,7 +7,7 @@ export const SvgBox = styled(motion.button)`
     flex-shrink: 0;
     height: 25px;
     width: 25px;
-    border: 1px solid ${COLORS.SECONDARY_FONT};
+    border: 1px solid ${COLORS.SECONDARY};
     border-radius: 2px;
     display: flex;
     align-items: center;
