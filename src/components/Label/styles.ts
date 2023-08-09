@@ -1,10 +1,13 @@
-import styled from "styled-components";
-import { COLORS } from "../../misc/colors";
-import { motion } from "framer-motion";
+import styled from 'styled-components';
+import { COLORS } from '../../misc/colors';
+import { motion } from 'framer-motion';
 
 export const Container = styled(motion.div)`
     border-bottom: 1px solid ${COLORS.PRIMARY_FONT};
     padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 `;
 
 export const Text = styled.h1`

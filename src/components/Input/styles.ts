@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { COLORS } from "../../misc/colors";
+import styled from 'styled-components';
+import { COLORS } from '../../misc/colors';
 
 export const Container = styled.div`
     align-items: center;
@@ -12,6 +12,7 @@ export const Container = styled.div`
     max-width: 34rem;
     padding: 1rem 0;
     @media screen and (max-width: 768px) {
+        max-width: 100%;
     }
 `;
 
@@ -31,5 +32,4 @@ export const Field = styled.input`
     @media screen and (max-width: 768px) {
         font-size: 1.8rem;
     }
-
 `;

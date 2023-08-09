@@ -3,6 +3,7 @@ import Label from '../Label';
 import Category from '../Category';
 import SlideInLeft from '../../animations/SlideInLeft';
 import CategoryItem from '../CategoryItem';
+import { Funnel } from '@phosphor-icons/react';
 
 interface Props {
     categories: Map<string, number>;
@@ -11,6 +12,7 @@ interface Props {
 }
 
 const Filter = ({ categories, selected, onSelect }: Props) => {
+    const isMobile = window.innerWidth <= 768;
     const handleSelectCategory = (category: string) => {
         if (category === selected) {
             onSelect('');
@@ -32,9 +34,15 @@ const Filter = ({ categories, selected, onSelect }: Props) => {
         ));
     };
 
+    const renderIcon = () => {
+        if (isMobile) {
+            return <Funnel size={20} />;
+        }
+    };
+
     return (
         <S.FilterContainer>
-            <Label>Filtros</Label>
+            <Label icon={renderIcon()}>Filtros</Label>
             <Category>{renderCategoryItems()}</Category>
         </S.FilterContainer>
     );
