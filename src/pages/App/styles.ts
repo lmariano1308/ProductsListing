@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { COLORS } from "./misc/colors";
-import Button from "./components/Button";
+import styled from 'styled-components';
+import { COLORS } from '../../misc/colors';
+import Button from '../../components/Button';
 
 export const Container = styled.div`
     display: flex;
@@ -24,8 +24,6 @@ export const InputContainer = styled.div`
     }
 `;
 
-
-
 export const MiddleContainer = styled.div`
     display: flex;
     flex: 1;
@@ -34,8 +32,6 @@ export const MiddleContainer = styled.div`
         flex-direction: column;
     }
 `;
-
-
 
 export const TextContainer = styled.div`
     border-bottom: 1px solid ${COLORS.PRIMARY_FONT};
@@ -53,26 +49,25 @@ export const ItemsContainer = styled.div`
     flex-direction: column;
     gap: 2rem;
     width: 100%;
-
 `;
 
 export const ProductsList = styled.ul`
     display: flex;
-flex-wrap: wrap;
-gap: 1rem;
-@media screen and (max-width: 768px) {
-    justify-content: center;
-}
+    flex-wrap: wrap;
+    gap: 1rem;
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+    }
 `;
 
 export const BackToTop = styled(Button)`
     position: fixed;
     bottom: 20px;
     right: 20px;
+    border-radius: 50%;
     z-index: 100;
     @media screen and (max-width: 768px) {
         bottom: 10px;
         right: 10px;
-        border-radius: 50%;
     }
 `;

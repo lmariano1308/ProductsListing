@@ -8,7 +8,6 @@ export const Text = styled.h1`
     text-transform: uppercase;
     font-family: 'Gotham', sans-serif;
     @media screen and (max-width: 768px) {
-        font-size: 2.8rem;
+        font-size: 3rem;
     }
-
 `;
