@@ -1,4 +1,4 @@
-import React, { type FC } from 'react';
+import { type FC } from 'react';
 import { useMotionValue, useTransform } from 'framer-motion';
 
 import * as S from './styles';
