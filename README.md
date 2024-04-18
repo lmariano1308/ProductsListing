@@ -1,6 +1,6 @@
 # Lucas Mariano - Front End/Mobile Developer
 
-Lista de Produtos com filtro e pesquisa.
+Lista de Produtos com filtro e pesquisa. Utilizado em processo seletivo para uma vaga de Desenvolvedor Front-End Jr.
 
 ### Desenvolvido e Otimizado por: [Lucas Mariano dos Santos](https://www.linkedin.com/in/lucas-mariano-846312107/)
 
